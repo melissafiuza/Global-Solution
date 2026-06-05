@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #020414;
+    --panel: #030518;
+    --panel-soft: #080a22;
+    --text: #f7f7ff;
+    --muted: #d8d8e4;
+    --accent: #ff5b32;
+    --accent-dark: #d64a2c;
+    --line: rgba(255, 91, 50, 0.5);
+    --glow: rgba(77, 88, 184, 0.28);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #020414;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 4%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 34px rgba(9, 15, 59, 0.45);
+    position: relative;
+    z-index: 10;
+}
+.nav-toggle {
+    display: none;
+}
+.menu-button {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 91, 50, 0.55);
+    border-radius: 8px;
+    background: rgba(8, 10, 34, 0.82);
+    cursor: pointer;
+    position: absolute;
+    margin-left: 80%;
+}
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    width: 1.375rem;
+    height: 0.125rem;
+    display: block;
+    background: var(--text);
+}
+.menu-icon {
+    position: relative;
+}
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+}
+
+.menu-icon::before {
+    top: -0.4375rem;
+}
+
+.menu-icon::after {
+    top: 0.4375rem;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav-link {
+    color: var(--text);
+    font-family: "Jockey One", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: var(--accent);
+}
+.nav-link:focus-visible,
+.menu-button:focus-visible,
+.button:focus-visible,
+.card-button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+#hero {
+    min-height: 38rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38%;
+    height: 0.0625rem;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45));
+}
+.hero-content {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+.hero-content h1,
+.quick-access h2,
+.quick-card h3 {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.hero-content h1 {
+    color: var(--accent);
+    font-size: 2.8rem;
+    line-height: 1.05;
+}
+
+.hero-content h2 {
+    color: var(--text);
+    font-size: 1.75rem;
+    line-height: 1.08;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.125rem;
+    width: 100%;
+}
+.button,
+.card-button {
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgba(116, 118, 138, 0.64);
+    color: var(--text);
+    font-family: "Jockey One", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button {
+    width: 13.75rem;
+    padding: 0 1.5rem;
+}
+
+.button:hover,
+.button:focus,
+.card-button:hover,
+.card-button:focus {
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: rgba(116, 118, 138, 0.55);
+}
+.hero-image {
+    width: 42%;
+    filter: drop-shadow(0 0 2.875rem rgba(255, 105, 52, 0.42));
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.quick-access {
+    width: 100%;
+    padding: 4rem 4%;
+    background: rgba(3, 5, 24, 0.94);
+    box-shadow: 0 -4px 2.125rem var(--glow), 0 1.5rem 3.375rem rgba(0, 0, 0, 0.38);
+}
+
+.quick-access h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: var(--accent);
+    font-size: 2.5rem;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.quick-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.125rem;
+    padding: 1.75rem;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: rgba(16, 7, 20, 0.72);
+}
+.quick-card h3 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.quick-card p {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+.card-button {
+    width: 100%;
+    height: 2.25rem;
+    margin-top: auto;
+    border-radius: 6px;
+    background: var(--accent-dark);
+    font-size: 0.92rem;
+}
+/*--------------responsividade--------------------*/
+@media (max-width: 1024px) {
+    .navbar {
+        gap: 1.25rem;
+    }
+    .nav-link {
+        font-size: 0.95rem;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    .quick-access h2 {
+        font-size: 2rem;
+    }
+    .quick-card h3 {
+        font-size: 1.25rem;
+    }
+    .quick-grid {
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-button {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 5.5rem;
+        left: 0;
+        width: 100%;
+        background: rgba(3, 5, 24, 0.98);
+        border-top: 1px solid rgba(255, 91, 50, 0.3);
+        padding: 1rem 0;
+        z-index: 100;
+    }
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+    .nav-link {
+        width: 100%;
+        padding: 0.875rem 4%;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    .hero-content {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .hero-image {
+        width: 100%;  
+    }
+    .quick-access {
+        padding: 2.5rem 4%;
+    }
+    .quick-access h2 {
+        font-size: 1.75rem;
+    }
+    .quick-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+    .quick-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 4.5rem;
+    }
+    .nav-links {
+        top: 4.5rem;
+    }
+    .menu-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    main {
+        width: 94%;
+    }
+    #hero {
+        padding-top: 2rem;
+    }
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    .hero-content h2 {
+        font-size: 1.05rem;
+    }
+    .button {
+        width: 100%;
+    }
+    .hero-image {
+        width: 95%;
+    }
+    .quick-access h2 {
+        font-size: 1.5rem;
+    }
+    .quick-card h3 {
+        font-size: 1.15rem;
+    }
+    .quick-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 430px) {
+    main {
+        width: 96%;
+    }
+    .hero-content h1 {
+        font-size: 1.35rem;
+    }
+    .hero-content h2 {
+        font-size: 0.95rem;
+    }
+    .hero-image {
+        width: 95%;
+    }
+    .quick-access {
+        padding: 2rem 3%;
+    }
+    .quick-access h2 {
+        font-size: 1.3rem;
+    }
+    .quick-card {
+        padding: 1.25rem;
+    }
+    .quick-card h3 {
+        font-size: 1.05rem;
+    }
+}
