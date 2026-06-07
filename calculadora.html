@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navega&ccedil;&atilde;o principal">
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menu">
+        <label class="menu-button" for="nav-toggle" aria-label="Abrir menu">
+            <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">In&iacute;cio</a>
+            <a class="nav-link active"calculadora.html">Calculadora</a>
+            <a class="nav-link" href="plantacoes.html">Planta&ccedil;&otilde;es</a>
+            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="integrantes.html">Integrantes</a>
+            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="contato.html">Contato</a>
+        </div>
+    </nav>
+     <main>
+        <h1 class="page-title">Calculadora Agrícola</h1>
+        <section class="calc-section">
+            <h2 class="section-title">
+                <span class="section-number">1</span> Taxa de Crescimento Diário
+            </h2>
+            <p class="section-desc">Acompanhe o crescimento de plantações ao longo do tempo</p>
+            <div class="calc-body">
+                <div class="calc-fields">
+                    <p class="fields-label">Insira os dados</p>
+                    <div class="field-group">
+                        <label for="medida-anterior">Medida anterior (cm)</label>
+                        <input type="number" id="medida-anterior" placeholder="Ex: 10.5">
+                    </div>
+                    <div class="field-group">
+                        <label for="medida-atual">Medida atual (cm)</label>
+                        <input type="number" id="medida-atual" placeholder="Ex: 18.7">
+                    </div>
+                    <div class="field-group">
+                        <label for="dias">Dias entre as medidas</label>
+                        <input type="number" id="dias" placeholder="Ex: 7">
+                    </div>
+                    <button class="calc-btn" id="btn-crescimento">Calcular</button>
+                </div>
+                <div class="calc-image" aria-hidden="true">
+                    <img src="assets/calculadora.png" alt="Imagem de uma calculadora de plantação">
+                </div>
+            </div>
+            <div class="resultado" id="resultado-crescimento"></div>
+        </section>
+        <section class="calc-section">
+            <h2 class="section-title">
+                <span class="section-number">2</span> Densidade de Plantio
+            </h2>
+            <p class="section-desc">Planeje o crescimento e espaçamento correto de uma lavoura em uma área</p>
+            <div class="calc-body">
+                <div class="calc-fields">
+                    <p class="fields-label">Insira os dados</p>
+                    <div class="field-group">
+                        <label for="populacao">População desejada (plantas)</label>
+                        <input type="number" id="populacao" placeholder="Ex: 50000">
+                    </div>
+                    <div class="field-group">
+                        <label for="espacamento">Espaçamento (cm)</label>
+                        <input type="number" id="espacamento" placeholder="Ex: 30">
+                    </div>
+                    <div class="field-group">
+                        <label for="area">Área (m²)</label>
+                        <input type="number" id="area" placeholder="Ex: 10000 (1 hectare)">
+                    </div>
+                    <button class="calc-btn" id="btn-densidade">Calcular</button>
+                </div>
+                <div class="calc-image" aria-hidden="true">
+                    <img src="assets/estufa.png" alt="Imagem de uma estufa de plantação">
+                </div>
+            </div>
+            <div class="resultado" id="resultado-densidade"></div>
+        </section>
+        <section class="calc-section">
+            <h2 class="section-title">
+                <span class="section-number">3</span> Produção Estimada por Área
+            </h2>
+            <p class="section-desc">Estime a produção total de uma cultura com base na área cultivada</p>
+            <div class="calc-body">
+                <div class="calc-fields">
+                    <p class="fields-label">Insira os dados</p>
+                    <div class="field-group">
+                        <label for="area-producao">Área cultivada (m²)</label>
+                        <input type="number" id="area-producao" placeholder="Ex: 500">
+                    </div> 
+                    <div class="field-group">
+                        <label for="producao-m2">Produção por m² (kg)</label>
+                        <input type="number" id="producao-m2" placeholder="Ex: 3.5">
+                    </div>
+                    <button class="calc-btn" id="btn-producao">Calcular</button>
+                </div>
+                <div class="calc-image" aria-hidden="true">
+                    <img src="assets/colheita.png" alt="">
+                </div>
+            </div>
+            <div class="resultado" id="resultado-producao"></div>
+        </section>
+    </main>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
