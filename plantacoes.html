@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Solution</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/plantacoes.css">
 </head>
 <body>
     <nav class="navbar" aria-label="Navega&ccedil;&atilde;o principal">
@@ -15,12 +16,202 @@
         </label>
 
         <div class="nav-links">
-            <a class="nav-link" href="index.html">In&iacute;cio</a>
-            <a class="nav-link" href="calculadora.html">Calculadora</a>
-            <a class="nav-link  active" href="plantacoes.html">Planta&ccedil;&otilde;es</a>
-            <a class="nav-link" href="sobre.html">Sobre</a>
-            <a class="nav-link" href="integrantes.html">Integrantes</a>
-            <a class="nav-link" href="faq.html">FAQ</a>
-            <a class="nav-link" href="contato.html">Contato</a>
+            <a class="nav-link" href="./index.html">In&iacute;cio</a>
+            <a class="nav-link" href="./calculadora.html">Calculadora</a>
+            <a class="nav-link  active" href="./plantacoes.html">Planta&ccedil;&otilde;es</a>
+            <a class="nav-link" href="./sobre.html">Sobre</a>
+            <a class="nav-link" href="./integrantes.html">Integrantes</a>
+            <a class="nav-link" href="./faq.html">FAQ</a>
+            <a class="nav-link" href="./contato.html">Contato</a>
         </div>
     </nav>
+    <main>
+          <header class="hero">
+    <div class="title">
+    <h1>Plantações</h1>
+    <h2>Acompanhe o registro completo de todas as culturas ativas no sistema agrícola marciano. Monitore status, área, população e crescimento.</h2>
+    </div>
+    <img src="./assets/estufa.jpg" alt="Domo agrícola em Marte">
+  </header>
+  <section class="estatisticas">
+    <div class="quadro">
+      <p class="titulo">Culturas Ativas</p>
+      <p class="valor">6</p>
+    </div>
+    <div class="quadro">
+      <p class="titulo">Área Total (m²)</p>
+      <p class="valor">4.890</p>
+    </div>
+    <div class="quadro">
+      <p class="titulo">População Total</p>
+      <p class="valor">1.047.000</p>
+    </div>
+    <div class="quadro">
+      <p class="titulo">Saudáveis</p>
+      <p class="valor">4/6</p>
+    </div>
+  </section>
+  <section class="filtros">
+    <h3>|🔍 Filtros</h3>
+    <input
+      type="text"
+      id="campoBusca"
+      class="campo-busca"
+      placeholder="Buscar por nome, espécie, setor ou ID..."
+    >
+    <div class="botoes-status">
+      <button class="botao-filtro ativo" data-status="Todos" onclick="filtrarStatus(this)">Todos</button>
+      <button class="botao-filtro" data-status="Saudável" onclick="filtrarStatus(this)">Saudável</button>
+      <button class="botao-filtro" data-status="Em observação" onclick="filtrarStatus(this)">Em Observação</button>
+      <button class="botao-filtro" data-status="Crítico" onclick="filtrarStatus(this)">Crítico</button>
+    </div>
+  </section>
+  <section class="tabela-area">
+    <table class="tabela" id="tabelaPlantacoes">
+      <thead>
+        <tr>
+          <th>Cultura</th>
+          <th>Setor</th>
+          <th class="direita">Área m²</th>
+          <th class="direita">População</th>
+          <th class="direita">cm/dia</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          data-nome="Trigo Marciano"
+          data-especie="Triticum aestivum"
+          data-setor="Domo A-1"
+          data-id="ARS-001"
+          data-status="Saudável"
+        >
+          <td>
+            <div class="nome">Trigo Marciano</div>
+            <div class="especie">Triticum aestivum</div>
+            <div class="id-codigo">ARS-001</div>
+          </td>
+          <td>Domo A-1</td>
+          <td class="direita">1.200</td>
+          <td class="direita">480.000</td>
+          <td class="direita">1,4</td>
+          <td>
+            <span class="badge saudavel">● Saudável</span>
+            <div class="data-colheita">Colheita: 20/07/2089</div>
+          </td>
+        </tr>
+        <tr
+          data-nome="Batata Vermelha"
+          data-especie="Solanum tuberosum"
+          data-setor="Domo A-2"
+          data-id="ARS-002"
+          data-status="Saudável"
+        >
+          <td>
+            <div class="nome">Batata Vermelha</div>
+            <div class="especie">Solanum tuberosum</div>
+            <div class="id-codigo">ARS-002</div>
+          </td>
+          <td>Domo A-2</td>
+          <td class="direita">800</td>
+          <td class="direita">32.000</td>
+          <td class="direita">0,9</td>
+          <td>
+            <span class="badge saudavel">● Saudável</span>
+            <div class="data-colheita">Colheita: 10/06/2089</div>
+          </td>
+        </tr>
+=        <tr
+          data-nome="Soja Adaptada"
+          data-especie="Glycine max"
+          data-setor="Domo B-1"
+          data-id="ARS-003"
+          data-status="Em observação"
+        >
+          <td>
+            <div class="nome">Soja Adaptada</div>
+            <div class="especie">Glycine max</div>
+            <div class="id-codigo">ARS-003</div>
+          </td>
+          <td>Domo B-1</td>
+          <td class="direita">950</td>
+          <td class="direita">285.000</td>
+          <td class="direita">1,1</td>
+          <td>
+            <span class="badge observacao">● Em observação</span>
+            <div class="data-colheita">Colheita: 15/08/2089</div>
+          </td>
+        </tr>
+        <tr
+          data-nome="Alface Hidropônica"
+          data-especie="Lactuca sativa"
+          data-setor="Hidro C-3"
+          data-id="ARS-004"
+          data-status="Saudável"
+        >
+          <td>
+            <div class="nome">Alface Hidropônica</div>
+            <div class="especie">Lactuca sativa</div>
+            <div class="id-codigo">ARS-004</div>
+          </td>
+          <td>Hidro C-3</td>
+          <td class="direita">240</td>
+          <td class="direita">18.000</td>
+          <td class="direita">2,3</td>
+          <td>
+            <span class="badge saudavel">● Saudável</span>
+            <div class="data-colheita">Colheita: 05/06/2089</div>
+          </td>
+        </tr>
+        <tr
+          data-nome="Tomate Orbital"
+          data-especie="Solanum lycopersicum"
+          data-setor="Domo B-2"
+          data-id="ARS-005"
+          data-status="Crítico"
+        >
+          <td>
+            <div class="nome">Tomate Orbital</div>
+            <div class="especie">Solanum lycopersicum</div>
+            <div class="id-codigo">ARS-005</div>
+          </td>
+          <td>Domo B-2</td>
+          <td class="direita">600</td>
+          <td class="direita">12.000</td>
+          <td class="direita">0,6</td>
+          <td>
+            <span class="badge critico">● Crítico</span>
+            <div class="data-colheita">Colheita: 01/07/2089</div>
+          </td>
+        </tr>
+        <tr
+          data-nome="Quinoa Vermelha"
+          data-especie="Chenopodium quinoa"
+          data-setor="Domo D-1"
+          data-id="ARS-006"
+          data-status="Saudável"
+        >
+          <td>
+            <div class="nome">Quinoa Vermelha</div>
+            <div class="especie">Chenopodium quinoa</div>
+            <div class="id-codigo">ARS-006</div>
+          </td>
+          <td>Domo D-1</td>
+          <td class="direita">1.100</td>
+          <td class="direita">220.000</td>
+          <td class="direita">1,0</td>
+          <td>
+            <span class="badge saudavel">● Saudável</span>
+            <div class="data-colheita">Colheita: 02/09/2089</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="mensagemVazia" class="nenhum-resultado" style="display: none;">
+      Nenhuma plantação encontrada com esses filtros.
+    </div>
+  </section>
+</main>
+<script src="./js/plantacoes.js"></script>
+</body>
+</html>
