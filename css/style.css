@@ -271,6 +271,25 @@ header {
     font-size: 3rem;
     color: var(--accent);
 }
+
+#integrants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.integrants-content {
+    border: 1px solid var(--line);
+    border-color: var(--accent);
+    
+    background-color: var(--panel-soft);
+    text-align: center;
+    color: var(--text);
+    font-size: 1.5rem;
+}
+
+
 /*--------------responsividade--------------------*/
 @media (max-width: 1024px) {
     .navbar {
