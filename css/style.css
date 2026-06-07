@@ -292,6 +292,10 @@ header {
     color: var(--accent);
     padding: 0.5rem;
 }
+
+.integrants-images {
+    width: 4rem;
+}
 /*--------------responsividade--------------------*/
 @media (max-width: 1024px) {
     .navbar {
