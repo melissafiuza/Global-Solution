@@ -282,14 +282,16 @@ header {
 .integrants-content {
     border: 1px solid var(--line);
     border-color: var(--accent);
-    
-    background-color: var(--panel-soft);
+    background-color: rgba (255, 165, 0, 0.2);
     text-align: center;
     color: var(--text);
     font-size: 1.5rem;
 }
 
-
+.integrants-content h3 {
+    color: var(--accent);
+    padding: 0.5rem;
+}
 /*--------------responsividade--------------------*/
 @media (max-width: 1024px) {
     .navbar {
@@ -453,4 +455,3 @@ header {
         font-size: 1.05rem;
     }
 }
-
