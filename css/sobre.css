@@ -17,14 +17,9 @@
     width: 50%;
 }
 .about-main-title {
-    font-family: 'Jockey One', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #ff5e3a;
-    letter-spacing: 0.15rem;
     margin-bottom: 2rem;
-    text-shadow: 0 0 2rem rgba(255, 94, 58, 0.3);
-}
+    text-align: justify;
+ }
 .about-para {
     font-size: 1.25rem;
     line-height: 2rem;
