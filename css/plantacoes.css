@@ -131,67 +131,69 @@ main{
   border-color: #ff6a2b;
 }
 .tabela-area {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto 40px auto;
-  background: rgba(16, 7, 20, 0.72);
-  border: 1px solid #ff6a2b;
-  border-radius: 6px;
-  overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    background: rgba(16, 7, 20, 0.72);
+    border: 1px solid #ff6a2b;
+    border-radius: 6px;
+    overflow: hidden; /* Remove a necessidade de barra de rolagem feia */
 }
 
 .tabela {
-  width: 100%;
-  border-collapse: collapse;
-  color: white;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
 }
 
 .tabela thead {
-  background-color: #11183a;
+    background-color: #11183a;
 }
+
 .tabela th {
-  color: white;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #2a3366;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #2a3366;
 }
 
 .tabela th.direita {
-  text-align: right;
+    text-align: right;
 }
 
 .tabela td {
-  padding: 15px;
-  border-bottom: 1px solid #ff6a2b;
-  font-size: 1rem;
+    padding: 15px;
+    border-bottom: 1px solid #ff6a2b;
+    font-size: 1rem;
 }
 
 .tabela tbody tr:hover {
-  background-color: #1a2047;
+    background-color: #1a2047;
 }
 
 .tabela .nome {
-  color: #ff6a2b;
-  font-weight: bold;
-  font-size: 1rem;
+    color: #ff6a2b;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
 .tabela .especie {
-  color: white;
-  font-size: 0.85rem;
-  font-style: italic;
+    color: white;
+    font-size: 0.85rem;
+    font-style: italic;
 }
 
 .tabela .id-codigo {
-  color: #6a7199;
-  font-size: 0.75rem;
-  margin-top: 4px;
+    color: #6a7199;
+    font-size: 0.75rem;
+    margin-top: 4px;
 }
 
 .tabela td.direita {
-  text-align: right;
+    text-align: right;
 }
 .badge {
   display: inline-block;
@@ -232,5 +234,174 @@ main{
   padding: 40px;
   color: #6a7199;
   font-size: 14px;
+}
+@media (max-width: 1024px) {
+    .title h1 {
+        font-size: 3.2rem;
+        margin-top: 2rem;
+    }
+    
+    .title h2 {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    
+    .quadro p.titulo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .title {
+        width: 100%;
+    }
+    
+    .title h1 {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    
+    .title h2 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .hero img {
+        width: 80%;
+        margin-top: 0;
+    }
+    
+    .estatisticas {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .quadro {
+        width: 48%;
+        margin: 5px 0;
+    }
+    
+    .botao-filtro {
+        font-size: 1.1rem;
+        padding: 6px 12px;
+    }
+    .tabela-area {
+        background: transparent;
+        border: none;
+        width: 95%;
+    }
+
+    .tabela thead {
+        display: none;
+    }
+
+    .tabela tbody tr {
+        display: block;
+        background: rgba(21, 27, 61, 0.8);
+        border: 1px solid #ff6a2b;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .tabela tbody tr:hover {
+        background-color: #1a2047;
+    }
+
+    .tabela td {
+        display: flex;
+        justify-content: space-between; /* Joga a etiqueta para a esquerda e o dado para a direita */
+        align-items: center;
+        text-align: right;
+        padding: 10px 8px;
+        border-bottom: 1px solid rgba(255, 106, 43, 0.2);
+        font-size: 0.95rem;
+    }
+
+    .tabela td:last-child {
+        border-bottom: none;
+    }
+
+    .tabela td.direita {
+        text-align: right;
+        justify-content: space-between;
+    }
+
+    .tabela td:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        background: rgba(13, 18, 48, 0.5);
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    .tabela td:last-child {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .tabela td:nth-child(2)::before { content: "Setor:"; }
+    .tabela td:nth-child(3)::before { content: "Área:"; }
+    .tabela td:nth-child(4)::before { content: "População:"; }
+    .tabela td:nth-child(5)::before { content: "Crescimento:"; }
+    .tabela td::before {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: #6a7199;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    .title h1 {
+        font-size: 2.3rem;
+    }
+    
+    .title h2 {
+        font-size: 1.3rem;
+    }
+    
+    .filtros h3 {
+        font-size: 1.6rem;
+    }
+    
+    .botao-filtro {
+        font-size: 1rem;
+        flex: 1 1 40%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .estatisticas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quadro {
+        width: 100%;/
+    }
+    
+    .filtros {
+        padding: 10px 0;
+    }
+    
+    .botao-filtro {
+        flex: 1 1 100%; 
+    }
+    .tabela-area {
+        width: 100%;
+    }
+    .tabela td {
+        font-size: 0.85rem;
+    }
 }
 

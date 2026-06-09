@@ -57,7 +57,7 @@ main{
 img{
     width: 100%;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .faq-titulo {
         font-size: 4rem; 
         margin-bottom: 2.5rem;
@@ -66,17 +66,11 @@ img{
         max-width: 800px;
         gap: 1rem;
     }
-    img {
-        max-width: 460px;
-        margin-top: 1.5rem;
-        margin-bottom: 4rem;
-    }
+   
 }
 
-@media (min-width: 768px) {
-    main {
-        padding: 0 2rem;
-    }
+@media (max-width: 768px) {
+
     .faq-titulo {
         font-size: 3.5rem;
         margin-top: 3rem;
@@ -84,9 +78,32 @@ img{
     }
     .faq-container {
         width: 85%;
-        max-width: 700px; /* Trava uma largura máxima elegante */
+        max-width: 700px; 
     }
-    img {
-        max-width: 420px;
+}
+@media (max-width: 600px) {
+    .faq-titulo {
+        font-size: 2.8rem;
+        margin-top: 2.5rem;
+    }
+    .faq-container {
+        width: 90%;
+    }
+    .faq-resposta {
+        font-size: 0.9rem;
+    }
+   
+}
+
+@media (max-width: 480px) {
+
+    .faq-titulo {
+        font-size: 2.4rem;
+    }
+    .faq-item {
+        padding: 1.1rem 1.4rem;
+    }
+    .faq-pergunta {
+        font-size: 0.95rem;
     }
 }
