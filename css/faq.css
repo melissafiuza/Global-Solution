@@ -1,5 +1,6 @@
 main{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -13,5 +14,46 @@ main{
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     text-shadow: 0 0 2rem rgba(255, 94, 58, 0.3);
+}
+.faq-container {
+    max-width: 85%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
 
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ddd;
+    border-radius: 0.6rem;
+    padding: 1.1rem 1.4rem;
+}
+
+.faq-pergunta {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.faq-pergunta span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+}
+
+.faq-resposta {
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.6;
+    margin: 0.6rem 0 0;
+    border-top: 1px solid #eee;
+    padding-top: 0.6rem;
+}
+img{
+    width: 100%;
 }
