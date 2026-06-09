@@ -58,7 +58,6 @@ VoidSeed/
 │   └── uil--github.png
 │
 ├── css/
-<<<<<<< HEAD
 │   ├── calculadora.css
 │   ├── contato.css
 │   ├── faq.css
@@ -66,18 +65,11 @@ VoidSeed/
 │   ├── plantacoes.css
 │   ├── sobre.css
 │   └── style.css
-=======
-│   ├── style.css
-│   ├── calculadora.css
-│   ├── integrantes.css
-│   └── plantacoes.css
->>>>>>> 3d6598fb9c893d6d6bf36f9c2a47be8146852476
 │
 ├── js/
 │   ├── calculadora.js
 │   └── plantacoes.js
 │
-<<<<<<< HEAD
 ├── calculadora.html
 ├── contato.html
 ├── faq.html
@@ -87,17 +79,6 @@ VoidSeed/
 ├── README.md
 ├── sobre.html
 
-=======
-├── index.html
-├── calculadora.html
-├── contato.html
-├── faq.html
-├── integrantes.html
-├── plantacoes.html
-├── sobre.html
-│
-└── README.md
->>>>>>> 3d6598fb9c893d6d6bf36f9c2a47be8146852476
 ```
 
 ---
