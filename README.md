@@ -38,7 +38,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
 ## 📂 Estrutura de Pastas
 
-```bash
+
 VoidSeed/
 │
 ├── assets/
@@ -79,7 +79,6 @@ VoidSeed/
 ├── README.md
 ├── sobre.html
 
-```
 
 ---
 
