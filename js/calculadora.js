@@ -53,7 +53,6 @@ btnDensidade.addEventListener("click", function() {
     let espacamento = parseFloat(document.getElementById("espacamento").value);
     let area = parseFloat(document.getElementById("area").value);
 
-    // Validação dos campos
     if (isNaN(populacao) || isNaN(espacamento) || isNaN(area)) {
         mostrarResultado("resultado-densidade", "⚠️ Por favor, preencha todos os campos.");
         return;

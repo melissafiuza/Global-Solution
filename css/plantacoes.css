@@ -137,7 +137,6 @@ main{
     background: rgba(16, 7, 20, 0.72);
     border: 1px solid #ff6a2b;
     border-radius: 6px;
-    overflow: hidden; /* Remove a necessidade de barra de rolagem feia */
 }
 
 .tabela {
@@ -274,7 +273,6 @@ main{
     
     .hero img {
         width: 80%;
-        margin-top: 0;
     }
     
     .estatisticas {
@@ -316,7 +314,7 @@ main{
 
     .tabela td {
         display: flex;
-        justify-content: space-between; /* Joga a etiqueta para a esquerda e o dado para a direita */
+        justify-content: space-between; 
         align-items: center;
         text-align: right;
         padding: 10px 8px;
