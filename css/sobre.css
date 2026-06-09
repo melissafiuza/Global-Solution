@@ -194,3 +194,121 @@
     line-height: 1.6rem;
     color: #b0b3c6;
 }
+
+/*--------------------responsividade------------------------------*/
+@media (max-width: 64rem) {
+    .about-hero-section {
+        margin-bottom: 4rem;
+    }
+    .about-main-title {
+        font-size: 3rem;
+    }
+    .hero-image {
+        height: 20rem;
+    }
+    .problem-solution-container {
+        margin-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .problem-column,
+    .solution-column {
+        min-height: 22rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .main-header {
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .nav-list {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav-link {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 0.8rem;
+    }
+    .main-content {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .about-hero-section {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    .about-text-col {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .about-image-col {
+        width: 100%;
+    }
+    .hero-image {
+        height: 18rem;
+    }
+    .problem-solution-container {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .problem-column,
+    .solution-column {
+        width: 100%;
+        min-height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .problem-column {
+        margin-bottom: 2rem;
+    }
+    .tech-cards-grid {
+        flex-direction: column;
+    }
+    .tech-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        min-height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .tech-card:last-child {
+        margin-bottom: 0;
+    }
+    .tech-logo-wrapper {
+        width: 10%;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 30rem) {
+    .about-main-title {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-para {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    .hero-image {
+        height: 14rem;
+    }
+    .column-title {
+        font-size: 1.7rem;
+    }
+    .tech-section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .tech-logo-wrapper {
+        width: 15%;
+    }
+}
