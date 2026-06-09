@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Solution</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sobre.css">
 </head>
 <body>
     <nav class="navbar" aria-label="Navega&ccedil;&atilde;o principal">
@@ -37,7 +38,6 @@
             </div>
         </section>
         <section class="problem-solution-container">
-            <!-- Coluna O Problema -->
             <div class="problem-column">
                 <h2 class="column-title problem-color">⚠️ O PROBLEMA</h2>
                 <p class="column-description">
@@ -49,8 +49,6 @@
                     <li><span class="emoji-bullet">⚠️</span> Baixas temperaturas</li>
                 </ul>
             </div>
-            
-            <!-- Coluna Nossa Solução -->
             <div class="solution-column">
                 <h2 class="column-title solution-color">🌱 NOSSA SOLUÇÃO</h2>
                 <p class="column-description">
@@ -69,11 +67,12 @@
             <div class="tech-cards-grid">
                 <div class="tech-card border-html">
                     <div class="tech-logo-wrapper">
-                        <svg viewBox="0 0 512 512" class="tech-logo-svg">
-                            <path fill="#E34F26" d="M71 460L37 0h438l-34 460-185 52z"/>
-                            <path fill="#EF652A" d="M256 472l151-42 28-386H256z"/>
-                            <path fill="#EBEBEB" d="M256 208h-68l-4-52h72v-52H127l11 156h118zM256 355l-1 1-56-15-3-37h-52l8 86 104 29z"/>
-                            <path fill="#FFFFFF" d="M256 208v52h107l-10 112-97 28v-54l50-15 5-51H256zM256 104h130l-4 52H256z"/>
+                        <svg class="tech-logo-svg" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 32 32">
+	                        <path d="M0 0h32v32H0z" fill="none" />
+	                        <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30z" />
+	                        <path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16z" />
+	                        <path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16zm0 8.027l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004z" />
+	                        <path fill="#fff" d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83z" />
                         </svg>
                     </div>
                     <h3 class="tech-card-title text-html">HTML5</h3>
@@ -83,12 +82,15 @@
                 </div>
                 <div class="tech-card border-css">
                     <div class="tech-logo-wrapper">
-                        <svg viewBox="0 0 512 512" class="tech-logo-svg">
-                            <path fill="#264DE4" d="M71 460L37 0h438l-34 460-185 52z"/>
-                            <path fill="#2965F1" d="M256 472l151-42 28-386H256z"/>
-                            <path fill="#EBEBEB" d="M256 208h-68l-4-52h72v-52H127l11 156h118zM256 355l-57-15-3-37h-52l8 86 104 29z"/>
-                            <path fill="#FFFFFF" d="M256 260h62l-5 53-57 15v52l93-25 10-113h-103zM256 156h122l4-52H256z"/>
-                        </svg>
+                    <svg class="tech-logo-svg" xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 128 128">
+	                    <path d="M0 0h128v128H0z" fill="none" />
+	                    <path fill="#1572b6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754l-45.243 12.543z" />
+	                    <path fill="#33a9dc" d="m64.001 117.062l36.559-10.136l8.601-96.354h-45.16z" />
+	                    <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711l-3.4 38.114h-30.95z" />
+	                    <path fill="#ebebeb" d="m64.083 87.349l-.061.018l-15.403-4.159l-.985-11.031H33.752l1.937 21.717l28.331 7.863l.063-.018z" />
+	                    <path fill="#fff" d="m81.127 64.675l-1.666 18.522l-15.426 4.164v14.39l28.354-7.858l.208-2.337l2.406-26.881z" />
+	                    <path fill="#ebebeb" d="M64.048 23.435v13.831H30.64l-.277-3.108l-.63-7.012l-.331-3.711zm-.047 27.996v13.831H48.792l-.277-3.108l-.631-7.012l-.33-3.711z" />
+                    </svg>
                     </div>
                     <h3 class="tech-card-title text-css">CSS</h3>
                     <p class="tech-card-desc">
@@ -97,9 +99,9 @@
                 </div>
                 <div class="tech-card border-js">
                     <div class="tech-logo-wrapper">
-                        <svg viewBox="0 0 512 512" class="tech-logo-svg">
-                            <path fill="#F7DF1E" d="M0 0h512v512H0z"/>
-                            <path fill="#323330" d="M312 360c4.5 13.5 13 23 31 23 18 0 27.5-9 27.5-30V182h39v169c0 43-24 64-67 64-37 0-60.5-19.5-70-49.5zm-119-35c6.5 10 16.5 17 33.5 17 16 0 25.5-8 25.5-26v-13c0-19.5-11-28.5-38.5-40.5-33.5-14.5-54.5-28.5-54.5-66.5 0-35.5 28.5-60 67-60 33 0 53 14 64 39l-31.5 20c-7-12-17-18-32-18-15 0-23 7.5-23 18 0 12.5 8.5 18.5 28 27 38.5 16 64 30.5 64 71 0 38.5-28 62.5-69.5 62.5-41.5 0-69-21.5-79-49.5z"/>
+                        <svg class="tech-logo-svg"  xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 16 16">
+	                        <path d="M0 0h16v16H0z" fill="none" />
+	                        <path fill="#ffca28" d="M2 2v12h12V2zm6 6h1v4a1.003 1.003 0 0 1-1 1H7a1.003 1.003 0 0 1-1-1v-1h1v1h1zm3 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1" />
                         </svg>
                     </div>
                     <h3 class="tech-card-title text-js">JAVASCRIPT</h3>
