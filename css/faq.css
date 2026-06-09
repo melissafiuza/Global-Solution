@@ -57,3 +57,36 @@ main{
 img{
     width: 100%;
 }
+@media (min-width: 1024px) {
+    .faq-titulo {
+        font-size: 4rem; 
+        margin-bottom: 2.5rem;
+    }
+    .faq-container {
+        max-width: 800px;
+        gap: 1rem;
+    }
+    img {
+        max-width: 460px;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+    .faq-titulo {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .faq-container {
+        width: 85%;
+        max-width: 700px; /* Trava uma largura máxima elegante */
+    }
+    img {
+        max-width: 420px;
+    }
+}
