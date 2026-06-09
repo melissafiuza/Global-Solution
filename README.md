@@ -38,7 +38,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
 ## 📂 Estrutura de Pastas
 
-```bash
+
 VoidSeed/
 │
 ├── assets/
@@ -58,25 +58,27 @@ VoidSeed/
 │   └── uil--github.png
 │
 ├── css/
-│   ├── style.css
 │   ├── calculadora.css
+│   ├── contato.css
+│   ├── faq.css
 │   ├── integrantes.css
-│   └── plantacoes.css
+│   ├── plantacoes.css
+│   ├── sobre.css
+│   └── style.css
 │
 ├── js/
 │   ├── calculadora.js
 │   └── plantacoes.js
 │
-├── index.html
 ├── calculadora.html
 ├── contato.html
 ├── faq.html
+├── index.html
 ├── integrantes.html
 ├── plantacoes.html
+├── README.md
 ├── sobre.html
-│
-└── README.md
-```
+
 
 ---
 
